@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onRollButtonClick(View view) {
+        int randomRoll = getRandomRoll();
+        rollButton.setText(Integer.toString(randomRoll));
     }
 
     private int getRandomRoll() {
