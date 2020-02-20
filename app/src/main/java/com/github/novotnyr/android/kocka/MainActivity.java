@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,4 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onRollButtonClick(View view) {
     }
+
+    private int getRandomRoll() {
+        Random random = new Random();
+        return random.nextInt(6) + 1; // (0--5) + 1 = 1--6
+    }
+
 }
